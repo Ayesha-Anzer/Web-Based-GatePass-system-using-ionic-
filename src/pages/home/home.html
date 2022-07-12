@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="signOut()">
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Hello, {{displayName}} {{uid}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="addGatePage()">
+    Add Gate Pass
+  </button>
+  <ion-list>
+    <ion-item class="text" *ngFor="let pass of passes">
+
+      <ion-card>
+
+        <ion-item>
+          <ion-icon name="school" item-start large></ion-icon>
+
+          <h2><a href="{{pass.id}}">{{pass.id}}</a></h2>
+          <p>{{pass.firstName}}</p>
+          <p>{{pass.lastName}}</p>
+          <p>{{pass.nationality}}</p>
+          <p>{{pass.company}}</p>
+          <p>{{pass.purpose}}</p>
+          <p>{{pass.approver}}</p>
+          <p>{{pass.date}}</p>
+          <p>{{pass.timeIn}}</p>
+          <p>{{pass.timeOut}}</p>
+          <p>{{pass.building}}</p>
+          <p>{{pass.section}}</p>
+          <p>{{pass.floor}}</p>
+
+        </ion-item>
+
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+
+
+
+
+
+
+
+
+</ion-content>

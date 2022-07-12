@@ -1,0 +1,89 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add Gate Pass</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>First Name</ion-label>
+      <ion-input type="text" [(ngModel)]="firstName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Last Name</ion-label>
+      <ion-input type="text" [(ngModel)]="lastName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>UAE ID</ion-label>
+      <ion-input type="number" [(ngModel)]="id"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label floating>Nationality</ion-label>
+      <ion-input type="text" [(ngModel)]="nationality"></ion-input>
+    </ion-item>
+
+
+
+    <ion-item>
+      <ion-label floating>Company</ion-label>
+      <ion-input type="text" [(ngModel)]="company"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Purpose</ion-label>
+      <ion-input type="text" [(ngModel)]="purpose"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Approver</ion-label>
+      <ion-input type="text" [(ngModel)]="approver"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Date</ion-label>
+      <ion-input type="number" [(ngModel)]="date"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label floating>Time-In</ion-label>
+      <ion-input type="text" [(ngModel)]="timeIn"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label floating>Time-Out</ion-label>
+      <ion-input type="text" [(ngModel)]="timeOut"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label floating>Building</ion-label>
+      <ion-input type="text" [(ngModel)]="building"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Section</ion-label>
+      <ion-input type="text" [(ngModel)]="section"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Floor</ion-label>
+      <ion-input type="text" [(ngModel)]="floor"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button (click)="addGatePass()"> Send Data </button>
+
+</ion-content>
